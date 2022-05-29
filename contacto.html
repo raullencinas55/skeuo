@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="imagen/x-icon" href="img/icono_skeuo.png">
+    <title>Skeuo Design</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b33ef734.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+    <div id="pantalla">
+        <header>
+            <a href="index.html"><img src="img/icono_skeuo.png" alt="Logo Skeuo Design">
+                <h1>SKEUO DESIGN</h1>
+            </a>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicio.html">Servicio</a></li>
+                    <li><a href="#" class="selected">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="contacto">
+            <article id="navegacion">
+                <h3 class="unbloked-portatil">Cotizá Tu Proyecto</h3>
+                <form action="" id="formulario" name="formulario" method="get">
+                    <fieldset id="tu-proyecto">
+                        <section class="blocked">
+                            <h3>Cotizá Tu Proyecto</h3>
+                            <section class="display">
+                                <div class="arriba">
+                                    <div class="numeros ">
+                                        <a href="#info-adicional"><p>3</p></a>
+                                    </div>
+                                    <div class="linea"></div>
+                                    <div id="datos" class="numeros ">
+                                        <a href="#datos-personales"><p>2</p></a>
+                                    </div>
+                                    <div class="linea"></div>
+                                    <div class="numeros avance">
+                                        <a href="#tu-proyecto"><p>1</p></a>
+                                    </div>
+                                </div>
+                                <div class="abajo">
+                                    <h3>Info adicional</h3>
+                                    <h3>Datos Personales</h3>
+                                    <h3>Tu Proyecto</h3>
+                                </div>
+                            </section>
+                        </section>
+                        <label for="mensaje">Contanos de tu proyecto</label>
+                        <textarea name="mensaje" class="" id="mensaje" 
+                            placeholder="Lo más detallado posible"></textarea>
+                        <label for="actualidad">Actualmente estas...</label>
+                        <select name="actualidad" id="actualidad" >
+                            <option value="">---</option>
+                            <option value="Trabajando con una agencia pero quisiera cambiarla">Trabajando con una
+                                agencia pero quisiera cambiarla</option>
+                            <option
+                                value="Haciendo algo de marketing internamente pero quisiera mejorar mis resultados">
+                                Haciendo algo de marketing internamente pero quisiera mejorar mis resultados</option>
+                            <option value="No estoy haciendo marketing">No estoy haciendo marketing</option>
+                            <option value="Con una idea para desarrollar">Con una idea para desarrollar</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <a href="#datos-personales" id="siguiente-proyecto"
+                            class="boton-siguiente blocked">Siguiente</a>
+                    </fieldset>
+                    <fieldset id="datos-personales" class="unbloked-portatil">
+                        <section class="blocked">
+                            <h3>Cotizá Tu Proyecto</h3>
+                            <section class="display">
+                                <div class="arriba">
+                                    <div class="numeros">
+                                        <a href="#info-adicional"><p>3</p></a>
+                                    </div>
+                                    <div class="linea"></div>
+                                    <div class="numeros avance">
+                                        <a href="#datos-personales"><p>2</p></a>
+                                    </div>
+                                    <div class="linea linea-avance "></div>
+                                    <div class="numeros avance">
+                                        <a href="#tu-proyecto"><p>1</p></a>
+                                    </div>
+                                </div>
+                                <div class="abajo">
+                                    <h3>Info adicional</h3>
+                                    <h3>Datos Personales</h3>
+                                    <h3>Tu Proyecto</h3>
+                                </div>
+                            </section>
+                        </section>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" value="" id="nombre" 
+                            placeholder="Escribe tu nombre completo">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" value="" id="apellido" 
+                            placeholder="Completa con tu apellido">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" name="telefono" value="" id="telefono" 
+                            placeholder="Ejemplo: Incluí Cod. de área">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" value="" id="email" 
+                            placeholder="Verifica escribir bien tu correo">
+                        <a href="#tu-proyecto" class="boton-atras blocked" id="atras-personales">Atras</a>
+                        <a href="#info-adicional" id="siguiente-personales"
+                            class="boton-siguiente blocked">Siguiente</a>
+                    </fieldset>
+                    <fieldset id="info-adicional" class="unbloked-portatil">
+                        <section class="blocked">
+                            <h3>Cotizá Tu Proyecto</h3>
+                            <section class="display">
+                                <div class="arriba">
+                                    <div class="numeros avance">
+                                        <a href="#info-adicional"><p>3</p></a>
+                                    </div>
+                                    <div class="linea linea-avance "></div>
+                                    <div class="numeros avance">
+                                        <a href="#datos-personales"><p>2</p></a>
+                                    </div>
+                                    <div class="linea linea-avance "></div>
+                                    <div class="numeros avance">
+                                        <a href="#tu-proyecto"><p>1</p></a>
+                                    </div>
+                                </div>
+                                <div class="abajo">
+                                    <h3>Info adicional</h3>
+                                    <h3>Datos Personales</h3>
+                                    <h3>Tu Proyecto</h3>
+                                </div>
+                            </section>
+                        </section>
+                        <label for="website">Sitio Web</label>
+                        <input type="text" name="website" value="" id="website" "
+                            placeholder="Ingresa la URL de tu sitio">
+                        <label for="empleados">¿Cuántos trabajan en tu empresa?</label>
+                        <input type="text" name="empleados" value="" id="empleados" 
+                         placeholder="Ingresa la cantidad de personas">
+                        <label for="pais">País</label>
+                        <select name="pais" id="pais" >
+                            <option value="">---</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Spain">Spain</option>
+                            <option value="United Kindom">United Kindom</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United States">United States</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" name="ciudad" value="" id="ciudad" 
+                             placeholder="Ingresa en nombre de tu ciudad">
+                        <a href="#datos-personales" class="boton-atras blocked" id="atras-adicional">Atras</a>
+                    </fieldset>
+                    <input type="submit" value="Enviar consulta" id="enviar" class="unbloked-portatil">
+                </form>
+            </article>
+        </main>
+        <footer>
+            <address>
+                <h4>CONTACTO</h4>
+                <ul>
+                    <li>
+                        <a href="https://goo.gl/maps/uENk3UoXefmphYBy5" target="_blank"><i
+                                class="fa-solid fa-location-dot"></i>
+                            Elpido gonzalez 4673 5521 |<br> Gllen - Mendoza</a>
+                    </li>
+                    <li>
+                        <a href="tel:+542614215001"><i class="fa-solid fa-square-phone"></i> (+54 261) 421 5001</a>
+                    </li>
+                    <li>
+                        <a href="mailto:contacto@skeuodesign.com"><i class="fa-solid fa-square-envelope"></i>
+                            contacto@skeuodesign.com</a>
+                    </li>
+                </ul>
+            </address>
+            <div class="blocked">
+                <h4>CONOCENOS</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicio.html">Servico</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="unbloked-portatil">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1166527797664!2d-68.79521198485862!3d-32.92151608092858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0c1bffdc4187%3A0x3e78a7eb26269708!2sElpidio%20Gonz%C3%A1lez%204689%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1653162305196!5m2!1ses-419!2sar"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h4>SEGUINOS EN:</h4>
+                <ul>
+                    <li>
+                        <a href="http://facebook.com/skeuodesign" target="_blank"><img src="./img/icon-facebook.svg"
+                                alt=""><span>FACEBOOK</span></a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com/skeuodesign" target="_blank"><img src="./img/icon-instagram.svg"
+                                alt=""><span>INSTAGRAM</span></a>
+                    </li>
+                    <li>
+                        <a href="http://youtube.com/user/skeuodesign" target="_blank"><img src="./img/icon-youtube.svg"
+                                alt=""><span>YOUTUBE</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/skeuodesign/" target="_blank"><img
+                                src="./img/icon-linkedin.svg" alt=""><span>LINKEDIN</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blocked">
+                <h4>TE AYUDAMOS CON:</h4>
+                <p> Marketing Digital,
+                    Desarrollo de Apps,
+                    Diseño y Desarrollo Web,
+                    Tiendas Online,
+                    Publicidad Digital,
+                    Posicionamiento Online.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

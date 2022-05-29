@@ -1,0 +1,1350 @@
+/******************************************Animaciones*********************************************/
+@keyframes slidein {
+    from {
+        margin-top: 500px;
+    }
+
+    to {
+        margin-top: 134px;
+    }
+}
+
+@keyframes chicos {
+    0% {
+        background-position: 700px bottom;
+        background-size: 110%;
+        background-image: url('../img/chica-feliz.png');
+        background-repeat: no-repeat;
+    }
+
+    10% {
+        background-position: -40px bottom;
+        background-size: 110%;
+        background-image: url('../img/chica-feliz.png');
+        background-repeat: no-repeat;
+    }
+
+    40% {
+        background-position: -40px bottom;
+        background-size: 110%;
+        background-image: url('../img/chica-feliz.png');
+        background-repeat: no-repeat;
+    }
+
+    49% {
+        background-position: 700px bottom;
+        background-size: 110%;
+        background-image: url('../img/chica-feliz.png');
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-position: 700px bottom;
+        background-size: 100%;
+        background-image: url('../img/chico-feliz.png');
+        background-repeat: no-repeat;
+    }
+
+    60% {
+        background-position: bottom;
+        background-size: 100%;
+        background-image: url('../img/chico-feliz.png');
+        background-repeat: no-repeat;
+    }
+
+    90% {
+        background-position: bottom;
+        background-size: 100%;
+        background-image: url('../img/chico-feliz.png');
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-position: 700px bottom;
+        background-size: 100%;
+        background-image: url('../img/chico-feliz.png');
+        background-repeat: no-repeat;
+    }
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #343a40;
+}
+
+#pantalla {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    max-width: 1366px;
+    height: auto;
+}
+
+/****************************************************** header ********************************************************/
+
+header {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1366px;
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    background: #ffffffb3;
+}
+
+header>a {
+    display: flex;
+    flex: 7 1 auto;
+    align-items: center;
+}
+
+/* logo y marca */
+header a img {
+    height: 50px;
+    margin-left: 16px;
+}
+
+header:hover {
+    transition: 0.5s ease-in-out;
+    background: rgba(255, 255, 255);
+    z-index: 100;
+}
+
+
+header a {
+    text-decoration: none;
+}
+
+header a h1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 8px;
+    text-align: left;
+    height: 50px;
+    color: #ec1075;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* barra navegacion */
+header nav {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header nav ul li {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    list-style: none;
+}
+
+header nav ul li a {
+    height: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #343a40;
+    margin: 0px auto;
+}
+
+header nav ul li a:hover {
+    transition: 0.25s ease-in-out;
+    color: #ec1075;
+    border-bottom: #ec1075 solid;
+}
+
+.selected {
+    color: #ec1075;
+    border-bottom: #ec1075 solid;
+}
+
+/*boton hamburguesa solo css*/
+
+header label {
+    flex: 1 1 auto;
+    margin: auto auto;
+    font-size: 25px;
+    display: none;
+    text-align: center;
+}
+
+#toggle {
+    display: none;
+}
+
+/*********************************************** main *************************************************/
+
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+aside {
+    flex: 1 1 50%;
+}
+
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 50%;
+}
+
+/*********************************************** footer *************************************************/
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: green;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+    background-color: #343a40;
+
+}
+
+footer div,
+footer address {
+    flex: 1 1 25%;
+    justify-content: center;
+}
+
+footer ul,
+footer address {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer h4,
+footer span {
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 8px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a,
+footer p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+footer a img {
+    width: 43px;
+    height: 24px;
+}
+
+footer div,
+footer address {
+    padding: 10px 30px 30px;
+    width: 320px;
+}
+
+
+/*********************************************** INDEX *************************************************/
+#index {
+    background-image:
+        url('../img/people-collage-design-byw.jpg');
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+#index article {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 647px;
+    height: 768px;
+}
+
+#index article h2 {
+    margin-top: 134px;
+    margin-bottom: 64px;
+    padding-left: 64px;
+    width: 975px;
+    height: 298px;
+    font-size: 80px;
+    text-align: left;
+    color: #ec1075;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+#div2-index {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#index article p {
+    flex: 1 1 100%;
+    font-size: 26px;
+    width: 538px;
+    left: 109px;
+    text-align: center;
+    padding: 0px 80px;
+    color: #343a40;
+}
+
+#index article a {
+    margin: 0px auto;
+    align-content: center;
+    width: 211px;
+    height: 60px;
+    text-decoration: none;
+    color: rgb(236, 16, 117);
+    font-size: 20px;
+    text-transform: uppercase;
+    border: rgb(236, 16, 117) solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#index article a:hover {
+    transition: 0.15s ease-in-out;
+    color: white;
+    background-color: rgb(236, 16, 117);
+}
+
+.boton-nosotros {
+    padding-top: 5px;
+}
+
+#boton-cotizar {
+    padding-top: 15px;
+}
+
+#index aside {
+    width: 646px;
+    height: 768px;
+    animation-duration: 15s;
+    animation-name: chicos;
+    animation-iteration-count: infinite;
+}
+
+.unbloked {
+    display: none;
+}
+
+.unbloked-portatil {
+    display: none;
+}
+
+/*********************************************** SERVICIOS *************************************************/
+
+#servicios {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#servicios aside {
+    flex: 1 1 auto;
+    text-align: left;
+    height: 768px;
+    padding: 32px;
+    padding-top: 70px;
+}
+
+#servicios aside h3 {
+    text-align: center;
+    margin-top: 32px;
+    text-align: left;
+}
+
+#servicios aside ul {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#servicios aside a#boton-contactar {
+    display: flex;
+}
+
+#servicios aside ul li {
+    list-style: none;
+    margin-top: 32px;
+}
+
+#servicios aside ul a {
+    color: #481a82;
+    text-decoration: none;
+}
+
+#servicios aside ul a:hover {
+    color: rgb(236, 16, 117);
+    text-decoration: none;
+}
+
+#boton-contactar {
+    margin-top: 60px;
+    width: 211px;
+    height: 60px;
+}
+
+#boton-contactar,
+.boton-nosotros,
+#enviar,
+#boton-cotizar,
+.boton-siguiente,
+.boton-atras {
+    text-decoration: none;
+    color: rgb(236, 16, 117);
+    font-size: 20px;
+    text-transform: uppercase;
+    border: rgb(236, 16, 117) solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#boton-contactar:hover {
+    margin-top: 62px;
+}
+
+#boton-contactar:hover,
+.boton-nosotros:hover,
+#boton-cotizar:hover {
+    transition: 0.15s ease-in-out;
+    color: white;
+    background-color: rgb(236, 16, 117);
+}
+
+#servicios article {
+    flex: 1 1 70%;
+    overflow-y: scroll;
+    margin-right: 32px;
+    width: 967px;
+    height: 768px;
+}
+
+#servicios article::-webkit-scrollbar {
+    display: none;
+}
+
+#acerca,
+#plan,
+#como,
+#proyectos,
+#preguntas {
+    display: flex;
+    flex-flow: row wrap;
+    height: 768px;
+    padding-top: 70px;
+    margin-bottom: 102px;
+}
+
+h2 {
+    text-align: center;
+    flex: 1 1 100%;
+    color: rgb(236, 16, 117);
+    margin-bottom: 64px;
+}
+
+h3 {
+    color: #481a82;
+}
+
+#acerca p {
+    height: 450px;
+    padding: 40px;
+    border-radius: 4px;
+    border-left: 7px solid rgb(236, 16, 117);
+    -webkit-box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
+    box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
+    font-size: 26px;
+    margin: 30px 110px;
+    text-align: center;
+}
+
+#plan {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#plan h2 {
+    flex: 1 1 100%;
+}
+
+#plan section,
+#plan a,
+#proyectos div {
+    flex: 1 1 35%;
+    padding: 0px;
+    margin: 16px 55px;
+    width: 320px;
+}
+
+#plan section {
+    height: 220px;
+}
+
+#plan section img {
+    width: 40px;
+    height: 40px;
+    margin: 16px 32px;
+}
+
+#plan section img,
+#como section img {
+    position: relative;
+    float: left;
+    padding: 0px;
+}
+
+#plan section h3,
+#plan section p,
+#preguntas p {
+    text-align: left;
+    position: relative;
+    float: left;
+}
+
+#como section img {
+    width: 80px;
+    height: 80px;
+    margin: 0px 32px;
+}
+
+#como section h3,
+#como section p,
+#preguntas h3 {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#como section {
+    margin: 32px 0px;
+}
+
+#proyectos div {
+    height: 200px;
+    border-radius: 4px;
+    border-left: 7px solid rgb(236, 16, 117);
+    -webkit-box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
+    box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
+}
+
+/*********************************************** CONTACTO *************************************************/
+
+#navegacion {
+    width: 1366px;
+    height: 768px;
+    position: fixed;
+    margin-top: 70px;
+    margin: 0px auto;
+}
+
+#contacto {
+    align-content: center;
+    flex-flow: wrap;
+    width: 1366px;
+    height: 768px;
+}
+
+#contacto h2 {
+    font-size: 6vw;
+}
+
+
+#contacto article {
+    position: relative;
+    padding: 0px;
+}
+
+.display {
+    width: 1084px;
+    height: 100px;
+    margin: 0px auto;
+    padding-top: 0px;
+}
+
+.arriba {
+    position: relative;
+    float: right;
+    width: 866px;
+    height: 40px;
+    margin-right: 250px;
+}
+
+.abajo {
+    width: 866px;
+    height: 40px;
+    margin: 0px auto;
+}
+
+.display h3 {
+    padding: 0px;
+    width: 210px;
+    position: relative;
+    float: right;
+    text-align: center;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.numeros {
+    padding: 0px;
+    width: auto;
+    position: relative;
+    float: right;
+}
+
+.numeros p {
+    padding-top: 4px;
+    margin: 0px auto;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1.17em;
+    border: rgb(236, 16, 117) solid;
+    font-weight: 700;
+    color: rgb(236, 16, 117);
+}
+
+.linea {
+    padding: 0px;
+    margin: 0px;
+    height: 20px;
+    width: 210px;
+    background-color: unset;
+    position: relative;
+    float: right;
+    border-bottom: rgb(236, 16, 117) solid;
+}
+
+#contacto label {
+    width: auto;
+    color: #fff;
+    background: #423f40;
+    padding: 2px 8px;
+    border-radius: 20px;
+    position: absolute;
+    margin: -15px 0 0 10px;
+    font-size: 20px;
+}
+
+#contacto h3 {
+    margin-bottom: 16px;
+    font-size: 1.3vw;
+}
+
+#contacto fieldset {
+    position: relative;
+    margin: 0px auto;
+    float: left;
+    width: 100%;
+    height: 768px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border: unset;
+    padding-top: 120px;
+    border-radius: 4px;
+}
+
+#contacto form {
+    overflow-y: scroll;
+    width: 100%;
+    height: 768px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-bottom: 120px;
+}
+
+.avance p {
+    border: #481a82 solid;
+    background-color: #481a82;
+    color: white;
+}
+
+#contacto .linea-avance {
+    border-color: #481a82;
+}
+
+#contacto form::-webkit-scrollbar {
+    display: none;
+}
+
+input,
+textarea,
+select {
+    border-left: 7px solid #481a82;
+    -webkit-box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
+    box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contacto form fieldset input:target,
+#contacto form fieldset input:focus,
+#contacto form fieldset input:active,
+#contacto form fieldset textarea:focus,
+#contacto form fieldset textarea:active,
+#contacto form fieldset select:focus,
+#contacto form fieldset select:active {
+    border-color: #ec1075;
+    border-left: 7px solid rgb(236, 16, 117);
+    outline: none;
+}
+
+#contacto form fieldset textarea {
+    padding-top: 20px;
+    color: rgb(59, 59, 59);
+    height: 255px;
+    font-size: 20px;
+}
+
+#contacto form fieldset a {
+    text-decoration: none;
+}
+
+#contacto form fieldset input,
+#contacto form fieldset select {
+    height: 60px;
+}
+
+.boton-siguiente:hover,
+#enviar:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(236, 16, 117);
+}
+
+.boton-atras:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #481a82;
+
+}
+
+.boton-atras,
+.boton-siguiente {
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 211px;
+    height: 30px;
+    text-decoration: none;
+}
+
+.boton-atras {
+    color: #481a82;
+    border-color: #481a82;
+    position: relative;
+    float: left;
+    margin-left: 40px;
+}
+
+.boton-siguiente {
+    position: relative;
+    float: right;
+    margin-right: 40px;
+    color: rgb(236, 16, 117);
+    border-color: rgb(236, 16, 117);
+}
+
+#enviar {
+    font-family: 'Montserrat', sans-serif;
+    width: 211px;
+    height: 30px;
+    color: rgb(236, 16, 117);
+    border-color: rgb(236, 16, 117);
+    background-color: unset;
+    position: relative;
+    float: right;
+    margin-right: 55px;
+    margin-top: -80px;
+}
+
+
+/*********************************************** media query *************************************************/
+
+@media all and (max-width: 1366px) {
+
+    /****************************************************** header ********************************************************/
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    header>a {
+        height: 70px;
+    }
+
+    header h1 {
+        text-align: left;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    .menu {
+
+        flex-flow: column nowrap;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    header nav ul li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header nav ul li a {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #343a40;
+        text-align: center;
+    }
+
+    header label {
+        display: flex;
+        flex-flow: column nowrap;
+        display: block;
+        cursor: pointer;
+    }
+
+    /****************************************************** FOOTER ********************************************************/
+
+    footer {
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+    footer div,
+    address {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 1 auto;
+        width: 320px;
+        align-content: center;
+        margin: 20px auto;
+        padding: 0px;
+    }
+
+    footer h4 {
+        text-align: center;
+        flex: 1 1 auto;
+        font-size: 2rem;
+        margin: 0px;
+    }
+
+    footer div span {
+        display: none;
+    }
+
+    footer div ul {
+        display: flex;
+        flex-flow: row nowrap;
+        text-align: center;
+        align-content: center;
+        width: 320px;
+    }
+
+    footer div li {
+        flex: 1 1 auto;
+    }
+
+    footer address li {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    footer a {
+        font-size: 1.3rem;
+    }
+
+    footer a img {
+        margin: 20px 8px;
+        width: 50px;
+        height: 50px;
+        padding: 7px;
+        border: 2px white solid;
+        border-radius: 10px;
+    }
+
+
+    /****************************************************** TRANSFORMACIONES ********************************************************/
+
+    .menu a:hover {
+        background-color: rgba(236, 16, 119, 0.7);
+        color: white;
+    }
+
+    .selected {
+        background-color: rgba(236, 16, 119, 0.739);
+        color: white;
+
+    }
+
+    .blocked {
+        display: none;
+    }
+
+    #toggle:checked+nav {
+        display: block;
+    }
+
+    footer>.unbloked-portatil {
+        display: flex;
+    }
+
+    .unbloked-portatil {
+        display: block;
+    }
+
+    /*********************************************** INDEX *************************************************/
+
+    #index article {
+        width: auto;
+        height: auto;
+    }
+
+    #index article div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #index article div h2 {
+        flex: 1 1 auto;
+        margin: 134px auto 32px;
+        padding: 0px;
+        width: 70%;
+        height: auto;
+        font-size: 6.5vw;
+        text-align: center;
+        animation-duration: 0s;
+        animation-name: none;
+    }
+
+    #index article div p {
+        flex: 1 1 auto;
+        font-size: 2.5vw;
+        width: 50%;
+        height: auto;
+        position: initial;
+        left: 0px;
+        margin: 32px auto;
+        padding: 0px;
+    }
+
+    #index article div a {
+        margin: 32px auto;
+        position: initial;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*============== Especificaciones de Servicos ==============*/
+    #servicios {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #acerca,
+    #plan,
+    #como,
+    #proyectos,
+    #preguntas {
+        flex: 1 1 50%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #servicios {
+        margin-top: 70px;
+        height: auto;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #servicios article {
+        margin-right: 0px;
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+    }
+
+    #servicios section {
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #servicios #como {
+        width: 100%;
+    }
+
+    #servicios h2 {
+        margin-top: 134px;
+        text-align: center;
+    }
+
+    #servicios h2,
+    #servicios section h2 {
+        width: 80%;
+        height: auto;
+        color: rgb(236, 16, 117);
+        font-size: 2rem;
+        margin: 0px auto;
+        margin-bottom: 32px;
+
+    }
+
+    #servicios section h3 {
+        width: 60%;
+        height: auto;
+        margin: 0px;
+        color: #481a82;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0px auto;
+        margin-bottom: 16px;
+    }
+
+    #servicios section p {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 32px;
+        border-radius: unset;
+        border-left: unset;
+        box-shadow: unset;
+        font-size: 1rem;
+        margin: 0px auto;
+        margin-bottom: 32px;
+        border-radius: 4px;
+        border-left: 7px solid rgb(236, 16, 117);
+        -webkit-box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
+        box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
+    }
+
+    #servicios #plan section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+
+    }
+
+    #servicios #plan p {
+        height: 100%;
+        width: 80%;
+        min-width: 280px;
+    }
+
+    #servicios section {
+        text-align: center;
+        padding: 0px;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    /*============== Especificaciones de contactos ==============*/
+
+    #navegacion {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        margin-top: 70px;
+        margin: 0px auto;
+    }
+
+    #contacto {
+        margin-top: 70px;
+        align-content: center;
+        flex-flow: wrap;
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    #contacto h2 {
+        align-content: center;
+        flex-flow: wrap;
+        margin: 0px;
+        font-size: 6.5vw;
+    }
+
+    #contacto h3 {
+        margin: 0px;
+        align-content: center;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #contacto article {
+        position: relative;
+        padding: 0px;
+    }
+
+    #contacto fieldset {
+        position: relative;
+        margin: 0px auto;
+        float: left;
+        height: auto;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border: unset;
+        padding-top: 0px;
+        border-radius: 0px;
+    }
+
+    #contacto form {
+        overflow-y: scroll;
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        padding-bottom: 0px;
+    }
+
+    #contacto form::-webkit-scrollbar {
+        display: none;
+    }
+
+    #contacto form fieldset input,
+    #contacto form fieldset textarea,
+    #contacto form fieldset select {
+        width: 100%;
+        margin-bottom: 0px;
+        font-size: 20px;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #contacto form fieldset textarea {
+        height: 178px;
+        font-size: 15px;
+        margin: 16px auto;
+    }
+
+    #contacto form fieldset input,
+    #contacto form fieldset select {
+        font-size: 15px;
+        height: 50px;
+        margin: 16px auto;
+    }
+
+    #enviar:hover {
+        text-decoration: none;
+    }
+
+    #enviar {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        float: left;
+        margin: 16px 0px 32px 0px;
+        padding: 0px;
+        background-color: unset;
+    }
+
+    #contacto form label {
+        width: auto;
+        color: #fff;
+        padding: 2px 8px;
+        border-radius: 20px;
+        position: absolute;
+        margin: 6px 0 0 20px;
+        font-size: 15px;
+        float: left;
+    }
+
+    #contacto #enviar {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        background: #ffffffb3;
+        position: initial;
+        z-index: 100;
+    }
+
+    #index article div h2 {
+        margin-top: 64px;
+    }
+
+    /*============== Especificaciones de inicio ==============*/
+    #pantalla {
+        width: 100%;
+        min-width: 320px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .unbloked {
+        display: block;
+    }
+
+    #index {
+        background-image: unset;
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    #index article {
+        display: flex;
+        flex-flow: column nowrap;
+        width: auto;
+        height: auto;
+        animation: none;
+    }
+
+    #index article img {
+        width: auto;
+        height: 200px;
+        margin: 0px auto;
+    }
+
+    #index article h2 {
+        margin: 0px auto;
+        margin-top: 102px;
+        margin-bottom: 32px;
+        height: auto;
+        text-align: center;
+    }
+
+    #index article p {
+        left: 0px;
+        font-size: 1vw;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+    #index article div h2 {
+        font-size: 2rem;
+
+    }
+
+    #index article div p {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1em;
+
+    }
+
+    h2 {
+        font-size: 1.3em;
+
+    }
+
+    p {
+        font-size: 0.75em;
+    }
+    #contacto{
+        margin-top: 0px;
+    }
+    #contacto h2 {
+        align-content: center;
+        flex-flow: wrap;
+
+    }
+
+    #contacto h3 {
+        font-size: 1.5em;
+
+    }
+
+    #contacto #enviar {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+
+}
+
+.box_incorrecto {
+    border: 5px solid #bb2929;
+    border-left: 8px solid #bb2929;
+    color: #bb2929;
+}
+
+.box_incorrecto::placeholder {
+    color: #bb2929;
+}
+
+#contacto .label_incorrecto {
+    background-color: #bb2929;
+}
