@@ -509,12 +509,18 @@ h3 {
 }
 
 #plan section,
-#plan a,
-#proyectos div {
+#plan a {
     flex: 1 1 35%;
     padding: 0px;
     margin: 16px 55px;
     width: 320px;
+}
+
+#proyectos div {
+    flex: 1 1 35%;
+    min-width: 280px;
+    padding: 0px;
+    margin: 20px;
 }
 
 #plan section {
@@ -561,7 +567,7 @@ h3 {
 }
 
 #proyectos div {
-    height: 200px;
+    height: 215px;
     border-radius: 4px;
     border-left: 7px solid rgb(236, 16, 117);
     -webkit-box-shadow: 0 0 10px 2px rgb(144 149 161 / 20%);
@@ -805,6 +811,26 @@ select {
     margin-top: -80px;
 }
 
+#wrap iframe {
+    margin: 0px 2vw;
+    display: flex;
+    align-items: center;
+    width: 115vw;
+    height: 435%;
+    border: 0;
+    -ms-transform: scale(0.23);
+    -moz-transform: scale(0.23);
+    -o-transform: scale(0.23);
+    -webkit-transform: scale(0.23);
+    transform: scale(0.23);
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+}
+
 
 /*********************************************** media query *************************************************/
 
@@ -951,6 +977,34 @@ select {
 
     .unbloked-portatil {
         display: block;
+    }
+
+    #wrap {
+        padding: 0px;
+        overflow: hidden;
+        flex-flow: row wrap;
+        align-items: center;
+
+    }
+
+    #wrap iframe {
+        margin: 0px 3vw;
+        display: flex;
+        align-items: center;
+        width: 132vw;
+        height: 500%;
+        border: 0;
+        -ms-transform: scale(0.23);
+        -moz-transform: scale(0.23);
+        -o-transform: scale(0.23);
+        -webkit-transform: scale(0.23);
+        transform: scale(0.23);
+        -ms-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+
     }
 
     /*********************************************** INDEX *************************************************/
@@ -1311,9 +1365,29 @@ select {
     p {
         font-size: 0.75em;
     }
-    #contacto{
+    #wrap iframe {
+        margin: 0px 13%;
+        display: flex;
+        align-items: center;
+        width: 240vw;
+        border: 0;
+        -ms-transform: scale(0.23);
+        -moz-transform: scale(0.23);
+        -o-transform: scale(0.23);
+        -webkit-transform: scale(0.23);
+        transform: scale(0.23);
+        -ms-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    
+    }
+
+    #contacto {
         margin-top: 0px;
     }
+
     #contacto h2 {
         align-content: center;
         flex-flow: wrap;
